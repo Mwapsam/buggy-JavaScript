@@ -116,12 +116,17 @@ function popup(projectIndex) {
   g('myModal').style.display = 'block';
 }
 
+const classBegin =
+  (document.getElementById('white').innerHTML =
+  classBegin.style.color =
+    'red');
+
 function init() {
   for (let k = 0; k < projects.length; k += 1) {
     const project = projects[k];
     const template = document.createElement('template');
     const technologies = project.technologies.map(
-      (t) => `<li class="langu">${t}</li>`,
+      (t) => `<li class="langu">${t}</li>`
     );
 
     template.innerHTML = `<div class="project-card desktop">
